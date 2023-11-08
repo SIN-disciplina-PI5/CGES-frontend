@@ -5,8 +5,7 @@ interface IFormInput {
 const FormInput = ({ title }: IFormInput) => {
   let upperTitle = title.toUpperCase();
   return (
-    <div className="flex flex-col justify-center border border-black">
-      <h2>Text Input Component</h2>
+    <div className="flex flex-col justify-center">
       <label className="pb-4 flex flex-col text-red-700 font-bold">
         {upperTitle}
         <input
