@@ -27,7 +27,7 @@ function RegisterChoice() {
                                 <p className="text-white text-lg font-semibold">Sou Estudante</p>
                             </button>
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'/Companyregistration'}>
 
                             <button className="w-60 h-20 flex items-center justify-around rounded-md bg-beige-fg">
                                 <BsBuilding color="white" size={40} />
