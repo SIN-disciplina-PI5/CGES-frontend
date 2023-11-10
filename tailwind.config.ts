@@ -18,7 +18,7 @@ const config: Config = {
         "grey-fg": "#F2F1EC",
         "beige-fg": "#D29F38",
         "link-fg": "#4F4FD7",
-        greyBackgournd: "#E9E9E9",
+        "greyBackgournd": "#E9E9E9",
       },
     },
   },
