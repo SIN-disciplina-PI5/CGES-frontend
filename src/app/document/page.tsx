@@ -22,8 +22,8 @@ const Document = () => {
         height="h-16"
       />
       <Button
-        title="Relatório de Avaliação de estágio"
-        nav="/document/relatorioAvaliacaoEstagio"
+        title="Relatório de Atividades de Estagiário"
+        nav="/document/relatorioDeAtividadesEstagiario"
         width="w-72 mb-10"
         height="h-16"
       />
