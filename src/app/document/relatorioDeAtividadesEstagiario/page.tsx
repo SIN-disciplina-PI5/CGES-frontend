@@ -4,6 +4,7 @@ import DocumentFormSubGroup from "@/components/DocumentFormComponents/DocumentFo
 import DocumentFormTitle from "@/components/DocumentFormComponents/DocumentFormTitle";
 import DocumentFormWrapper from "@/components/DocumentFormComponents/DocumentFormWrapper";
 import Table from "@/components/DocumentFormComponents/Table";
+import Button from "@/components/button";
 
 const RelatorioAtividadeDoEstagiario = () => {
   return (
@@ -115,7 +116,13 @@ const RelatorioAtividadeDoEstagiario = () => {
                 />
                 Outro motivo. Qual?
               </label>
-              <textarea name="" id="" cols={30} rows={10} />
+              <textarea
+                className="border border-red-fg"
+                name=""
+                id=""
+                cols={30}
+                rows={10}
+              />
             </div>
           </div>
         </DocumentFormSubGroup>
@@ -271,10 +278,19 @@ const RelatorioAtividadeDoEstagiario = () => {
 
         <DocumentFormSubGroup title="Comentários e sugestões:">
           <div className="flex flex-col mb-5">
-            <textarea name="" id="" cols={30} rows={10} />
+            <textarea
+              className="border border-red-fg"
+              name=""
+              id=""
+              cols={30}
+              rows={10}
+            />
           </div>
         </DocumentFormSubGroup>
       </DocumentFormGroup>
+      <div className="w-full flex justify-center mb-10 mt-10">
+        <Button title="Enviar" nav="/" width="w-56" height="h-16" />
+      </div>
     </DocumentFormWrapper>
   );
 };
