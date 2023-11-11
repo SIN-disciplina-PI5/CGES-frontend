@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface Estagiario {
   id: number;
@@ -49,7 +50,8 @@ const Table: React.FC<TableProps> = ({ data }) => {
           <tr key={estagiario.id}>
             
             <td className="px-6 py-4 whitespace-nowrap">{estagiario.tipo}</td>
-            <td className="px-6 py-4 whitespace-nowrap">{estagiario.estagiario}</td>
+            <td className="px-6 py-4 whitespace-nowrap" >
+              <Link href={'/DetailsStudent/'}>{estagiario.estagiario}</Link></td>
             <td className="px-6 py-4 whitespace-nowrap">{estagiario.departamento}</td>
             <td className={`px-6 py-4 whitespace-nowrap ${estagiario.status === 'Concluído' ? 'bg-green-100' : 'bg-red-100'}`}>
               {estagiario.status}
