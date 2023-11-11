@@ -1,3 +1,4 @@
+import Button from "@/components/button";
 import HeaderComponent from "@/components/header";
 
 const Document = ({ children }: { children: React.ReactNode }) => {
