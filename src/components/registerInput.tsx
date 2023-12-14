@@ -3,7 +3,7 @@ import { InputHTMLAttributes } from "react"
 interface InputProps {
     placeholder: string
     width?: string,
-    onChange: any 
+    onChange?: any 
 }
 
 const RegisterInput = ({ placeholder, width, onChange }: InputProps) => {
