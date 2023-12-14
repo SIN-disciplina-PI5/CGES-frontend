@@ -18,14 +18,16 @@ const HeaderStudent = () => {
                     <li className="text-red-fg font-bold "><Link href={'/'}>FAQ</Link></li>
                 </ul>
                 <div className="flex flex-col text-center font-semibold">
-                <p>Amanda Martins da Silva</p>
-                <p>(RA: 0000055555)</p>
+                    <p>Amanda Martins da Silva</p>
+                    <p>(RA: 0000055555)</p>
                 </div>
-                <FiLogOut size={30}/>
+                <Link href={'/signIn'}>
+                    <FiLogOut size={30} />
+                </Link>
             </div>
 
         </nav>
-     
+
     )
 }
 

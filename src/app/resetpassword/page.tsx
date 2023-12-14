@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link"
 
 import SignBanner from "@/components/signBanner"
@@ -6,8 +7,12 @@ import Button from "@/components/button"
 
 import { BsEnvelope } from 'react-icons/bs'
 import Image from "next/image"
+/* import { useRouter } from "next/navigation" */
 
 export default function SignIn() {
+
+    /* const router = useRouter(); */
+
     return (
         <main className="h-screen flex justify-center">
 
@@ -20,12 +25,12 @@ export default function SignIn() {
                 <div className="w-2/5 h-3/6 flex flex-col items-center justify-center my-10 rounded-md bg-white ">
                     <p className="text-2xl font-semibold text-red-fg">Redefinir Senha</p>
                     <div className="w-full flex flex-col items-center  gap-6 mt-14 mb-4">
-                        <Input title="Informe seu E-mail" children={<BsEnvelope size={24} color="white" />} />
+                        <Input title="Informe seu E-mail" children={<BsEnvelope size={24} color="white" />} onChange={() => {}}/>
 
                     </div>
                 
                     
-                    <Button title={"ENVIAR"} width="w-1/2" height='h-14' nav="/"/>
+                    <Button title={"ENVIAR"} width="w-1/2" height='h-14' /* press={() => router.push('/')} *//* nav={'/'} *//>
 
                     <p className=" text-center text-xg font-semibold text-red-fg relative top-9 ">Ao clicar em enviar, o link de redefinção de senha será enviado para o seu e-mail!</p>
                     

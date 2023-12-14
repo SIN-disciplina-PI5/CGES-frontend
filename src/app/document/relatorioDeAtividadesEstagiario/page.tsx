@@ -289,7 +289,7 @@ const RelatorioAtividadeDoEstagiario = () => {
         </DocumentFormSubGroup>
       </DocumentFormGroup>
       <div className="w-full flex justify-center mb-10 mt-10">
-        <Button title="Enviar" nav="/" width="w-56" height="h-16" />
+        <Button title="Enviar" width="w-56" height="h-16" /* press={() => {}} */ /* nav="/" *//>
       </div>
     </DocumentFormWrapper>
   );

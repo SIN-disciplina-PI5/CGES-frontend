@@ -38,7 +38,7 @@ const TermoAditivo = () => {
       <DocumentForm>
         {renderComponent()}
         <div className="w-full flex justify-center mb-10 mt-10">
-          <Button title="Enviar" nav="/" width="w-56" height="h-16" />
+          <Button title="Enviar" width="w-56" height="h-16" /* nav='/' *//>
         </div>
       </DocumentForm>
     </DocumentFormWrapper>

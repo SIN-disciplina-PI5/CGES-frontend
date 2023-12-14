@@ -58,7 +58,7 @@ export default function SignIn() {
 
                     <span className="text-link-fg mb-7"><Link href={'/resetpassword'}>Esqueceu a senha?</Link></span>
 
-                    <Button title={"ENTRAR"} width="w-1/2" height='h-14' press={signIn}/>
+                    <Button title={"ENTRAR"} width="w-1/2" height='h-14' press={signIn} /* nav="/" *//>
 
                     <span className="mt-7 text-red-fg font-semibold underline underline-offset-4"><Link href={'/registerChoice'}>Cadastre-se aqui</Link></span>
                 </div>

@@ -6,7 +6,7 @@ import HeaderStudent from "@/components/headerStudent"
 export default function studentPannel() {
     return (
         <main className="h-screen  justify-center">
-            <HeaderStudent/>
+            <HeaderStudent />
 
             <div className="flex justify-between p-20">
                 <p className="text-4xl font-bold">Estágios</p>
@@ -19,7 +19,9 @@ export default function studentPannel() {
                     <p>Início: 12/12/2023 </p>
                     <p>Fim: 12/12/2023 </p>
                 </div>
-                <button className="px-16 py-2 border bg-red-fg text-white font-semibold rounded-xl">Documentos</button>
+                <Link href={'/document'}>
+                    <button className="px-16 py-2 border bg-red-fg text-white font-semibold rounded-xl">Documentos</button>
+                </Link>
             </div>
             <div className="flex justify-between p-20 bg-grey-fg">
                 <div>
@@ -30,6 +32,6 @@ export default function studentPannel() {
                 </div>
                 <button className="px-16 py-2 border bg-red-fg text-white font-semibold rounded-xl">Documentos</button>
             </div>
-        </main>
+        </main >
     )
 } 

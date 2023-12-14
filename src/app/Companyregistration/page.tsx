@@ -3,17 +3,17 @@ import Image from 'next/image'
 import SignBanner from '@/components/signBanner'
 import RegisterInput from '@/components/registerInput'
 import Button from '@/components/button'
-import { useRouter } from 'next/navigation'
+/* import { useRouter } from 'next/navigation' */
 
 
 const SignUp = () => {
 
-    const router = useRouter()
+    /* const router = useRouter() */
 
-    const signUp = () => {
+    /* const signUp = () => {
         router.push('/')
     }
-
+ */
     return (
         <main className="h-screen flex justify-center">
 
@@ -33,7 +33,7 @@ const SignUp = () => {
                     </div>
                     <RegisterInput placeholder='* Informe sua senha' />
                     <RegisterInput placeholder='* Confirme sua senha' />
-                    <Button title='ENTRAR' width='w-1/6' height='h-12' press={signUp}/>
+                    <Button title='ENTRAR' width='w-1/6' height='h-12' /* press={signUp} */ /* nav={'/'} *//>
                 </div>
 
                 <span className="text-red-fg">@2023 - Todos os direitos reservados.</span>

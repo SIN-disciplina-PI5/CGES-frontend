@@ -24,7 +24,7 @@ const Table = () => {
         </table>
       </div>
       <div className="w-full flex justify-center mb-10 mt-10">
-        <Button nav="#" title="Adicionar" width="w-56" height="h-16" />
+        <Button /* press={() => {}} *//* nav='/' */ title="Adicionar" width="w-56" height="h-16" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from "react"
+'use client'
 
 interface InputProps {
     placeholder: string

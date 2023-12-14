@@ -1,4 +1,4 @@
-
+"use client"
 
 interface InputTypes {
     title: string,
