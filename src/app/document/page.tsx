@@ -1,12 +1,14 @@
+"use client"
 import Button from '@/components/button'
 import HeaderComponent from '@/components/header'
 import Title from '@/components/pageTitle';
 /* import { useRouter } from 'next/navigation'; */
 import React from 'react'
+import { useRouter } from 'next/navigation';
 
 const Document = () => {
 
-  /* const router = useRouter() */
+  const router = useRouter()
 
   return (
     <div
@@ -17,19 +19,19 @@ const Document = () => {
         title="Termo de compromisso"
         width="w-72 mb-10"
         height="h-20"
-        /* nav='/' */
+        press={() => router.push('/document/termoDeCompromisso')}
       />
       <Button
         title="Termo Aditivo"
         width="w-72 mb-10"
-        height="h-16"
-        /* nav='/' */
+        height="h-20"
+        press={() => router.push('/document/termoAditivo')}
       />
       <Button
         title="Relatório de Atividades de Estagiário"
         width="w-72 mb-10"
-        height="h-16"
-        /* nav='/' */
+        height="h-20"
+        press={() => router.push('/document/relatorioDeAtividadesEstagiario')}
       />
     </div>
   );

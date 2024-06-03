@@ -1,9 +1,13 @@
+"use client"
 import Link from "next/link"
-
+import { useRouter } from 'next/navigation'
 import HeaderStudent from "@/components/headerStudent"
 
 
 export default function studentPannel() {
+
+    const router = useRouter()
+
     return (
         <main className="h-screen  justify-center">
             <HeaderStudent />
@@ -19,9 +23,7 @@ export default function studentPannel() {
                     <p>Início: 12/12/2023 </p>
                     <p>Fim: 12/12/2023 </p>
                 </div>
-                <Link href={'/document'}>
-                    <button className="px-16 py-2 border bg-red-fg text-white font-semibold rounded-xl">Documentos</button>
-                </Link>
+                <button className="px-16 h-16 py-2 border bg-red-fg text-white font-semibold rounded-xl" onClick={() => router.push('/document')}>Documentos</button>
             </div>
             <div className="flex justify-between p-20 bg-grey-fg">
                 <div>
@@ -30,7 +32,7 @@ export default function studentPannel() {
                     <p>Início: 12/12/2023 </p>
                     <p>Fim: 12/12/2023 </p>
                 </div>
-                <button className="px-16 py-2 border bg-red-fg text-white font-semibold rounded-xl">Documentos</button>
+                <button className="px-16 h-16 py-2 border bg-red-fg text-white font-semibold rounded-xl" onClick={() => router.push('/document')}>Documentos</button>
             </div>
         </main >
     )

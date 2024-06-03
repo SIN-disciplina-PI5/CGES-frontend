@@ -56,11 +56,11 @@ export default function SignIn() {
                         <Input title="Informe a sua senha..." children={<BiLockAlt size={24} color="white" />} onChange={setPassword}/>
                     </div>
 
-                    <span className="text-link-fg mb-7"><Link href={'/resetpassword'}>Esqueceu a senha?</Link></span>
+                    <span className="text-link-fg mb-7 cursor-pointer" onClick={() => router.push('/resetpassword')}>Esqueceu a senha?</span>
 
-                    <Button title={"ENTRAR"} width="w-1/2" height='h-14' press={signIn} /* nav="/" *//>
+                    <Button title={"ENTRAR"} width="w-1/2" height='h-14' press={signIn}/>
 
-                    <span className="mt-7 text-red-fg font-semibold underline underline-offset-4"><Link href={'/registerChoice'}>Cadastre-se aqui</Link></span>
+                    <span className="mt-7 text-red-fg font-semibold underline underline-offset-4 cursor-pointer" onClick={() => router.push('/signUp')}>Cadastre-se aqui</span>
                 </div>
 
                 <span className="text-red-fg">@2023 - Todos os direitos reservados.</span>
