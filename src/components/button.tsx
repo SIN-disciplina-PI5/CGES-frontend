@@ -15,6 +15,7 @@ const Button = ({ title, width, height, press /* nav */ }: ButtonTypes) => {
             {/* <Link href={nav}> */}
                 <p className='text-lg text-white font-bold'>{title}</p>
             {/* </Link> */}
+            
         </button>
     )
 }
