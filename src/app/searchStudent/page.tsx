@@ -15,9 +15,9 @@ const SearchStudent = () => {
 
     const [name, setName] = useState<string>('')
 
-    const search = () => {
-        const response = handleSearch({nome: name})
-        console.log(response)
+    const search = async () => {
+        const response = await handleSearch({nome: name})
+        console.log(response.data)
     }
     
     return (
