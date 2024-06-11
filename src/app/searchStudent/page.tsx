@@ -18,6 +18,9 @@ const SearchStudent = () => {
     const search = async () => {
         const response = await handleSearch({nome: name})
         console.log(response.data)
+        if (response.data) {
+            router.push('signature')
+        }
     }
     
     return (
