@@ -51,7 +51,7 @@ export default function SignIn() {
                 <div className="w-2/5 h-4/6 flex flex-col items-center justify-center my-10 rounded-md bg-white ">
                     <p className="text-2xl font-semibold text-red-fg">Acesso a plataforma</p>
                     <div className="w-full flex flex-col items-center  gap-6 mt-14 mb-4">
-                        <Input title="RA ou CNPJ" children={<BsFillPersonFill size={24} color="white" />} onChange={setEmail}/>
+                        <Input title="Email" children={<BsFillPersonFill size={24} color="white" />} onChange={setEmail}/>
 
                         <Input title="Informe a sua senha..." children={<BiLockAlt size={24} color="white" />} onChange={setPassword}/>
                     </div>

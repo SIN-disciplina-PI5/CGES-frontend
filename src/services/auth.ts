@@ -2,7 +2,7 @@ import api from "./api";
 import { ISignIn, ISignUp } from "@/interfaces";
 
 export async function handleSignUp(body: ISignUp) {
-    const response = await api.post('user/createUser', {
+    const response = await api.post('user', {
         nome: body.name,
         email: body.email,
         senha: body.password,
